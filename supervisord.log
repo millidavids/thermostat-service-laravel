@@ -1,0 +1,26 @@
+2016-01-30 17:02:28,601 CRIT Supervisor running as root (no user in config file)
+2016-01-30 17:02:28,608 INFO supervisord started with pid 1
+2016-01-30 17:02:29,610 INFO spawned: 'php5-fpm' with pid 8
+2016-01-30 17:02:29,613 INFO spawned: 'nginx' with pid 9
+2016-01-30 17:02:30,690 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-01-30 17:02:30,691 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-01-30 21:59:11,371 WARN received SIGTERM indicating exit request
+2016-01-30 21:59:11,373 INFO waiting for nginx, php5-fpm to die
+2016-01-30 21:59:11,374 INFO stopped: nginx (exit status 0)
+2016-01-30 21:59:11,382 INFO stopped: php5-fpm (exit status 0)
+2016-01-30 22:22:13,768 CRIT Supervisor running as root (no user in config file)
+2016-01-30 22:22:13,775 INFO supervisord started with pid 1
+2016-01-30 22:22:14,778 INFO spawned: 'php5-fpm' with pid 14
+2016-01-30 22:22:14,781 INFO spawned: 'nginx' with pid 15
+2016-01-30 22:22:15,820 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-01-30 22:22:15,821 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-01-30 22:27:25,671 WARN received SIGTERM indicating exit request
+2016-01-30 22:27:25,674 INFO waiting for nginx, php5-fpm to die
+2016-01-30 22:27:25,674 INFO stopped: nginx (exit status 0)
+2016-01-30 22:27:25,691 INFO stopped: php5-fpm (exit status 0)
+2016-01-30 22:27:33,618 CRIT Supervisor running as root (no user in config file)
+2016-01-30 22:27:33,624 INFO supervisord started with pid 1
+2016-01-30 22:27:34,629 INFO spawned: 'php5-fpm' with pid 10
+2016-01-30 22:27:34,631 INFO spawned: 'nginx' with pid 11
+2016-01-30 22:27:35,674 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-01-30 22:27:35,675 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
