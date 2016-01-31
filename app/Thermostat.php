@@ -3,11 +3,18 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Ramsey\Uuid\Uuid;
 
 class Thermostat extends Model
 {
+    function __construct($attributes = array())
+    {
+      parent::__construct($attributes);
+      $this->attributes = array('guid' => Uuid::uuid1()->toString());
+    }
+
     protected $fillable = [
-        'name'
+      'name'
     ];
 
     public function user()
@@ -19,4 +26,5 @@ class Thermostat extends Model
     {
       return $this->hadMany('App/ThermostatReading');
     }
+
 }

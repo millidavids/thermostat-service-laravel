@@ -15,7 +15,7 @@ class CreateThermostatsTable extends Migration
         Schema::create('thermostats', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('guid');
+            $table->string('guid')->unique();
             $table->integer('user_id');
             $table->timestamps();
         });
