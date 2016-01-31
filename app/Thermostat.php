@@ -19,12 +19,12 @@ class Thermostat extends Model
 
     public function user()
     {
-      return $this->belongsTo('App/User');
+      return $this->belongsTo('App\User');
     }
 
     public function readings()
     {
-      return $this->hadMany('App/ThermostatReading');
+      return $this->hadMany('App\ThermostatReading');
     }
 
 }

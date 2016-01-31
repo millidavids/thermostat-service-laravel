@@ -13,6 +13,6 @@ class ThermostatReading extends Model
 
     public function thermostat()
     {
-      return $this->belongsTo('App/Thermostat');
+      return $this->belongsTo('App\Thermostat');
     }
 }

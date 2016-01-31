@@ -9,5 +9,8 @@ use App\Http\Controllers\Controller;
 
 class ThermostatController extends Controller
 {
-    //
+    public function create($user_id)
+    {
+      return 'create';
+    }
 }

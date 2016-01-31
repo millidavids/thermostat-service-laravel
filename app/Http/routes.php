@@ -32,6 +32,8 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('users', 'UserController@getIndex');
 
+Route::resource('users.thermostats', 'ThermostatController');
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 

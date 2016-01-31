@@ -26,6 +26,6 @@ class User extends Authenticatable
 
     public function thermostats()
     {
-        return $this->hasMany('App/Thermostat');
+        return $this->hasMany('App\Thermostat');
     }
 }
