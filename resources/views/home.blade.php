@@ -8,10 +8,27 @@
                 <div class="panel-heading">Thermostats</div>
                 <div class="panel-body">
                     @if (Auth::user()->thermostats()->count() > 0)
-                        <p>You have thermostats.</p>
+                        <ul class="list-group">
+                            @foreach(Auth::user()->thermostats as $thermostat)
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            {{ $thermostat->name }}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            {{ 'current temperature' }}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            {{ 'current humidity' }}
+                                        </div>
+
+                                    </div>
+                                </li>
+                            @endforeach
+                        </ul>
                     @else
                         <p>You have no thermostats.</p>
-                        {{ link_to_route('users.thermostats.create','lol', Auth::user()->id) }}
+                        {{ link_to_route('users.thermostats.create','Create one?', Auth::user()->id) }}
                     @endif
                 </div>
             </div>
