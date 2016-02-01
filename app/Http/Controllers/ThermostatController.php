@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Thermostat;
 
 class ThermostatController extends Controller
 {
@@ -42,6 +43,15 @@ class ThermostatController extends Controller
       $therm->name = $request->input('name');
       $therm->save();
       return view('home');
+    }
+
+    public function postReading(Request $request)
+    {
+      $therm = Thermostat::where('guid', $request->json('guid'))->first();
+      $reading = $therm->readings()->create(array());
+      $reading->temperature = $request->json('temperature');
+      $reading->humidity = $request->json('humidity');
+      $reading->save();
     }
 
     /**

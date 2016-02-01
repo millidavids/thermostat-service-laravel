@@ -24,7 +24,7 @@ class Thermostat extends Model
 
     public function readings()
     {
-      return $this->hadMany('App\ThermostatReading');
+      return $this->hasMany('App\ThermostatReading');
     }
 
 }

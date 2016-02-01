@@ -32,6 +32,7 @@ Route::group(['middleware' => ['web']], function () {
   Route::resource('users.thermostats', 'ThermostatController');
 });
 
+Route::post('reading', 'ThermostatController@postReading');
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
